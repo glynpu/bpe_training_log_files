@@ -1,0 +1,818 @@
+config parsed
+Added key: store_based_barrier_key:1 to store for rank: 0
+About to get train cuts
+About to get train cuts
+About to get Musan cuts
+About to create train dataset
+Using BucketingSampler.
+About to create train dataloader
+About to get dev cuts
+About to get dev cuts
+About to create dev dataset
+About to create dev dataloader
+about to create model
+================================================================================
+Model parameters summary:
+================================================================================
+* encoder_embed.conv.0.weight:                                              4608
+* encoder_embed.conv.0.bias:                                                 512
+* encoder_embed.conv.2.weight:                                           2359296
+* encoder_embed.conv.2.bias:                                                 512
+* encoder_embed.out.weight:                                              4980736
+* encoder_embed.out.bias:                                                    512
+* encoder.layers.0.self_attn.pos_bias_u:                                     512
+* encoder.layers.0.self_attn.pos_bias_v:                                     512
+* encoder.layers.0.self_attn.in_proj.weight:                              786432
+* encoder.layers.0.self_attn.in_proj.bias:                                  1536
+* encoder.layers.0.self_attn.out_proj.weight:                             262144
+* encoder.layers.0.self_attn.out_proj.bias:                                  512
+* encoder.layers.0.self_attn.linear_pos.weight:                           262144
+* encoder.layers.0.feed_forward.0.weight:                                1048576
+* encoder.layers.0.feed_forward.0.bias:                                     2048
+* encoder.layers.0.feed_forward.3.weight:                                1048576
+* encoder.layers.0.feed_forward.3.bias:                                      512
+* encoder.layers.0.feed_forward_macaron.0.weight:                        1048576
+* encoder.layers.0.feed_forward_macaron.0.bias:                             2048
+* encoder.layers.0.feed_forward_macaron.3.weight:                        1048576
+* encoder.layers.0.feed_forward_macaron.3.bias:                              512
+* encoder.layers.0.conv_module.pointwise_conv1.weight:                    524288
+* encoder.layers.0.conv_module.pointwise_conv1.bias:                        1024
+* encoder.layers.0.conv_module.depthwise_conv.weight:                      15872
+* encoder.layers.0.conv_module.depthwise_conv.bias:                          512
+* encoder.layers.0.conv_module.norm.weight:                                  512
+* encoder.layers.0.conv_module.norm.bias:                                    512
+* encoder.layers.0.conv_module.pointwise_conv2.weight:                    262144
+* encoder.layers.0.conv_module.pointwise_conv2.bias:                         512
+* encoder.layers.0.norm_ff_macaron.weight:                                   512
+* encoder.layers.0.norm_ff_macaron.bias:                                     512
+* encoder.layers.0.norm_ff.weight:                                           512
+* encoder.layers.0.norm_ff.bias:                                             512
+* encoder.layers.0.norm_mha.weight:                                          512
+* encoder.layers.0.norm_mha.bias:                                            512
+* encoder.layers.0.norm_conv.weight:                                         512
+* encoder.layers.0.norm_conv.bias:                                           512
+* encoder.layers.0.norm_final.weight:                                        512
+* encoder.layers.0.norm_final.bias:                                          512
+* encoder.layers.1.self_attn.pos_bias_u:                                     512
+* encoder.layers.1.self_attn.pos_bias_v:                                     512
+* encoder.layers.1.self_attn.in_proj.weight:                              786432
+* encoder.layers.1.self_attn.in_proj.bias:                                  1536
+* encoder.layers.1.self_attn.out_proj.weight:                             262144
+* encoder.layers.1.self_attn.out_proj.bias:                                  512
+* encoder.layers.1.self_attn.linear_pos.weight:                           262144
+* encoder.layers.1.feed_forward.0.weight:                                1048576
+* encoder.layers.1.feed_forward.0.bias:                                     2048
+* encoder.layers.1.feed_forward.3.weight:                                1048576
+* encoder.layers.1.feed_forward.3.bias:                                      512
+* encoder.layers.1.feed_forward_macaron.0.weight:                        1048576
+* encoder.layers.1.feed_forward_macaron.0.bias:                             2048
+* encoder.layers.1.feed_forward_macaron.3.weight:                        1048576
+* encoder.layers.1.feed_forward_macaron.3.bias:                              512
+* encoder.layers.1.conv_module.pointwise_conv1.weight:                    524288
+* encoder.layers.1.conv_module.pointwise_conv1.bias:                        1024
+* encoder.layers.1.conv_module.depthwise_conv.weight:                      15872
+* encoder.layers.1.conv_module.depthwise_conv.bias:                          512
+* encoder.layers.1.conv_module.norm.weight:                                  512
+* encoder.layers.1.conv_module.norm.bias:                                    512
+* encoder.layers.1.conv_module.pointwise_conv2.weight:                    262144
+* encoder.layers.1.conv_module.pointwise_conv2.bias:                         512
+* encoder.layers.1.norm_ff_macaron.weight:                                   512
+* encoder.layers.1.norm_ff_macaron.bias:                                     512
+* encoder.layers.1.norm_ff.weight:                                           512
+* encoder.layers.1.norm_ff.bias:                                             512
+* encoder.layers.1.norm_mha.weight:                                          512
+* encoder.layers.1.norm_mha.bias:                                            512
+* encoder.layers.1.norm_conv.weight:                                         512
+* encoder.layers.1.norm_conv.bias:                                           512
+* encoder.layers.1.norm_final.weight:                                        512
+* encoder.layers.1.norm_final.bias:                                          512
+* encoder.layers.2.self_attn.pos_bias_u:                                     512
+* encoder.layers.2.self_attn.pos_bias_v:                                     512
+* encoder.layers.2.self_attn.in_proj.weight:                              786432
+* encoder.layers.2.self_attn.in_proj.bias:                                  1536
+* encoder.layers.2.self_attn.out_proj.weight:                             262144
+* encoder.layers.2.self_attn.out_proj.bias:                                  512
+* encoder.layers.2.self_attn.linear_pos.weight:                           262144
+* encoder.layers.2.feed_forward.0.weight:                                1048576
+* encoder.layers.2.feed_forward.0.bias:                                     2048
+* encoder.layers.2.feed_forward.3.weight:                                1048576
+* encoder.layers.2.feed_forward.3.bias:                                      512
+* encoder.layers.2.feed_forward_macaron.0.weight:                        1048576
+* encoder.layers.2.feed_forward_macaron.0.bias:                             2048
+* encoder.layers.2.feed_forward_macaron.3.weight:                        1048576
+* encoder.layers.2.feed_forward_macaron.3.bias:                              512
+* encoder.layers.2.conv_module.pointwise_conv1.weight:                    524288
+* encoder.layers.2.conv_module.pointwise_conv1.bias:                        1024
+* encoder.layers.2.conv_module.depthwise_conv.weight:                      15872
+* encoder.layers.2.conv_module.depthwise_conv.bias:                          512
+* encoder.layers.2.conv_module.norm.weight:                                  512
+* encoder.layers.2.conv_module.norm.bias:                                    512
+* encoder.layers.2.conv_module.pointwise_conv2.weight:                    262144
+* encoder.layers.2.conv_module.pointwise_conv2.bias:                         512
+* encoder.layers.2.norm_ff_macaron.weight:                                   512
+* encoder.layers.2.norm_ff_macaron.bias:                                     512
+* encoder.layers.2.norm_ff.weight:                                           512
+* encoder.layers.2.norm_ff.bias:                                             512
+* encoder.layers.2.norm_mha.weight:                                          512
+* encoder.layers.2.norm_mha.bias:                                            512
+* encoder.layers.2.norm_conv.weight:                                         512
+* encoder.layers.2.norm_conv.bias:                                           512
+* encoder.layers.2.norm_final.weight:                                        512
+* encoder.layers.2.norm_final.bias:                                          512
+* encoder.layers.3.self_attn.pos_bias_u:                                     512
+* encoder.layers.3.self_attn.pos_bias_v:                                     512
+* encoder.layers.3.self_attn.in_proj.weight:                              786432
+* encoder.layers.3.self_attn.in_proj.bias:                                  1536
+* encoder.layers.3.self_attn.out_proj.weight:                             262144
+* encoder.layers.3.self_attn.out_proj.bias:                                  512
+* encoder.layers.3.self_attn.linear_pos.weight:                           262144
+* encoder.layers.3.feed_forward.0.weight:                                1048576
+* encoder.layers.3.feed_forward.0.bias:                                     2048
+* encoder.layers.3.feed_forward.3.weight:                                1048576
+* encoder.layers.3.feed_forward.3.bias:                                      512
+* encoder.layers.3.feed_forward_macaron.0.weight:                        1048576
+* encoder.layers.3.feed_forward_macaron.0.bias:                             2048
+* encoder.layers.3.feed_forward_macaron.3.weight:                        1048576
+* encoder.layers.3.feed_forward_macaron.3.bias:                              512
+* encoder.layers.3.conv_module.pointwise_conv1.weight:                    524288
+* encoder.layers.3.conv_module.pointwise_conv1.bias:                        1024
+* encoder.layers.3.conv_module.depthwise_conv.weight:                      15872
+* encoder.layers.3.conv_module.depthwise_conv.bias:                          512
+* encoder.layers.3.conv_module.norm.weight:                                  512
+* encoder.layers.3.conv_module.norm.bias:                                    512
+* encoder.layers.3.conv_module.pointwise_conv2.weight:                    262144
+* encoder.layers.3.conv_module.pointwise_conv2.bias:                         512
+* encoder.layers.3.norm_ff_macaron.weight:                                   512
+* encoder.layers.3.norm_ff_macaron.bias:                                     512
+* encoder.layers.3.norm_ff.weight:                                           512
+* encoder.layers.3.norm_ff.bias:                                             512
+* encoder.layers.3.norm_mha.weight:                                          512
+* encoder.layers.3.norm_mha.bias:                                            512
+* encoder.layers.3.norm_conv.weight:                                         512
+* encoder.layers.3.norm_conv.bias:                                           512
+* encoder.layers.3.norm_final.weight:                                        512
+* encoder.layers.3.norm_final.bias:                                          512
+* encoder.layers.4.self_attn.pos_bias_u:                                     512
+* encoder.layers.4.self_attn.pos_bias_v:                                     512
+* encoder.layers.4.self_attn.in_proj.weight:                              786432
+* encoder.layers.4.self_attn.in_proj.bias:                                  1536
+* encoder.layers.4.self_attn.out_proj.weight:                             262144
+* encoder.layers.4.self_attn.out_proj.bias:                                  512
+* encoder.layers.4.self_attn.linear_pos.weight:                           262144
+* encoder.layers.4.feed_forward.0.weight:                                1048576
+* encoder.layers.4.feed_forward.0.bias:                                     2048
+* encoder.layers.4.feed_forward.3.weight:                                1048576
+* encoder.layers.4.feed_forward.3.bias:                                      512
+* encoder.layers.4.feed_forward_macaron.0.weight:                        1048576
+* encoder.layers.4.feed_forward_macaron.0.bias:                             2048
+* encoder.layers.4.feed_forward_macaron.3.weight:                        1048576
+* encoder.layers.4.feed_forward_macaron.3.bias:                              512
+* encoder.layers.4.conv_module.pointwise_conv1.weight:                    524288
+* encoder.layers.4.conv_module.pointwise_conv1.bias:                        1024
+* encoder.layers.4.conv_module.depthwise_conv.weight:                      15872
+* encoder.layers.4.conv_module.depthwise_conv.bias:                          512
+* encoder.layers.4.conv_module.norm.weight:                                  512
+* encoder.layers.4.conv_module.norm.bias:                                    512
+* encoder.layers.4.conv_module.pointwise_conv2.weight:                    262144
+* encoder.layers.4.conv_module.pointwise_conv2.bias:                         512
+* encoder.layers.4.norm_ff_macaron.weight:                                   512
+* encoder.layers.4.norm_ff_macaron.bias:                                     512
+* encoder.layers.4.norm_ff.weight:                                           512
+* encoder.layers.4.norm_ff.bias:                                             512
+* encoder.layers.4.norm_mha.weight:                                          512
+* encoder.layers.4.norm_mha.bias:                                            512
+* encoder.layers.4.norm_conv.weight:                                         512
+* encoder.layers.4.norm_conv.bias:                                           512
+* encoder.layers.4.norm_final.weight:                                        512
+* encoder.layers.4.norm_final.bias:                                          512
+* encoder.layers.5.self_attn.pos_bias_u:                                     512
+* encoder.layers.5.self_attn.pos_bias_v:                                     512
+* encoder.layers.5.self_attn.in_proj.weight:                              786432
+* encoder.layers.5.self_attn.in_proj.bias:                                  1536
+* encoder.layers.5.self_attn.out_proj.weight:                             262144
+* encoder.layers.5.self_attn.out_proj.bias:                                  512
+* encoder.layers.5.self_attn.linear_pos.weight:                           262144
+* encoder.layers.5.feed_forward.0.weight:                                1048576
+* encoder.layers.5.feed_forward.0.bias:                                     2048
+* encoder.layers.5.feed_forward.3.weight:                                1048576
+* encoder.layers.5.feed_forward.3.bias:                                      512
+* encoder.layers.5.feed_forward_macaron.0.weight:                        1048576
+* encoder.layers.5.feed_forward_macaron.0.bias:                             2048
+* encoder.layers.5.feed_forward_macaron.3.weight:                        1048576
+* encoder.layers.5.feed_forward_macaron.3.bias:                              512
+* encoder.layers.5.conv_module.pointwise_conv1.weight:                    524288
+* encoder.layers.5.conv_module.pointwise_conv1.bias:                        1024
+* encoder.layers.5.conv_module.depthwise_conv.weight:                      15872
+* encoder.layers.5.conv_module.depthwise_conv.bias:                          512
+* encoder.layers.5.conv_module.norm.weight:                                  512
+* encoder.layers.5.conv_module.norm.bias:                                    512
+* encoder.layers.5.conv_module.pointwise_conv2.weight:                    262144
+* encoder.layers.5.conv_module.pointwise_conv2.bias:                         512
+* encoder.layers.5.norm_ff_macaron.weight:                                   512
+* encoder.layers.5.norm_ff_macaron.bias:                                     512
+* encoder.layers.5.norm_ff.weight:                                           512
+* encoder.layers.5.norm_ff.bias:                                             512
+* encoder.layers.5.norm_mha.weight:                                          512
+* encoder.layers.5.norm_mha.bias:                                            512
+* encoder.layers.5.norm_conv.weight:                                         512
+* encoder.layers.5.norm_conv.bias:                                           512
+* encoder.layers.5.norm_final.weight:                                        512
+* encoder.layers.5.norm_final.bias:                                          512
+* encoder.layers.6.self_attn.pos_bias_u:                                     512
+* encoder.layers.6.self_attn.pos_bias_v:                                     512
+* encoder.layers.6.self_attn.in_proj.weight:                              786432
+* encoder.layers.6.self_attn.in_proj.bias:                                  1536
+* encoder.layers.6.self_attn.out_proj.weight:                             262144
+* encoder.layers.6.self_attn.out_proj.bias:                                  512
+* encoder.layers.6.self_attn.linear_pos.weight:                           262144
+* encoder.layers.6.feed_forward.0.weight:                                1048576
+* encoder.layers.6.feed_forward.0.bias:                                     2048
+* encoder.layers.6.feed_forward.3.weight:                                1048576
+* encoder.layers.6.feed_forward.3.bias:                                      512
+* encoder.layers.6.feed_forward_macaron.0.weight:                        1048576
+* encoder.layers.6.feed_forward_macaron.0.bias:                             2048
+* encoder.layers.6.feed_forward_macaron.3.weight:                        1048576
+* encoder.layers.6.feed_forward_macaron.3.bias:                              512
+* encoder.layers.6.conv_module.pointwise_conv1.weight:                    524288
+* encoder.layers.6.conv_module.pointwise_conv1.bias:                        1024
+* encoder.layers.6.conv_module.depthwise_conv.weight:                      15872
+* encoder.layers.6.conv_module.depthwise_conv.bias:                          512
+* encoder.layers.6.conv_module.norm.weight:                                  512
+* encoder.layers.6.conv_module.norm.bias:                                    512
+* encoder.layers.6.conv_module.pointwise_conv2.weight:                    262144
+* encoder.layers.6.conv_module.pointwise_conv2.bias:                         512
+* encoder.layers.6.norm_ff_macaron.weight:                                   512
+* encoder.layers.6.norm_ff_macaron.bias:                                     512
+* encoder.layers.6.norm_ff.weight:                                           512
+* encoder.layers.6.norm_ff.bias:                                             512
+* encoder.layers.6.norm_mha.weight:                                          512
+* encoder.layers.6.norm_mha.bias:                                            512
+* encoder.layers.6.norm_conv.weight:                                         512
+* encoder.layers.6.norm_conv.bias:                                           512
+* encoder.layers.6.norm_final.weight:                                        512
+* encoder.layers.6.norm_final.bias:                                          512
+* encoder.layers.7.self_attn.pos_bias_u:                                     512
+* encoder.layers.7.self_attn.pos_bias_v:                                     512
+* encoder.layers.7.self_attn.in_proj.weight:                              786432
+* encoder.layers.7.self_attn.in_proj.bias:                                  1536
+* encoder.layers.7.self_attn.out_proj.weight:                             262144
+* encoder.layers.7.self_attn.out_proj.bias:                                  512
+* encoder.layers.7.self_attn.linear_pos.weight:                           262144
+* encoder.layers.7.feed_forward.0.weight:                                1048576
+* encoder.layers.7.feed_forward.0.bias:                                     2048
+* encoder.layers.7.feed_forward.3.weight:                                1048576
+* encoder.layers.7.feed_forward.3.bias:                                      512
+* encoder.layers.7.feed_forward_macaron.0.weight:                        1048576
+* encoder.layers.7.feed_forward_macaron.0.bias:                             2048
+* encoder.layers.7.feed_forward_macaron.3.weight:                        1048576
+* encoder.layers.7.feed_forward_macaron.3.bias:                              512
+* encoder.layers.7.conv_module.pointwise_conv1.weight:                    524288
+* encoder.layers.7.conv_module.pointwise_conv1.bias:                        1024
+* encoder.layers.7.conv_module.depthwise_conv.weight:                      15872
+* encoder.layers.7.conv_module.depthwise_conv.bias:                          512
+* encoder.layers.7.conv_module.norm.weight:                                  512
+* encoder.layers.7.conv_module.norm.bias:                                    512
+* encoder.layers.7.conv_module.pointwise_conv2.weight:                    262144
+* encoder.layers.7.conv_module.pointwise_conv2.bias:                         512
+* encoder.layers.7.norm_ff_macaron.weight:                                   512
+* encoder.layers.7.norm_ff_macaron.bias:                                     512
+* encoder.layers.7.norm_ff.weight:                                           512
+* encoder.layers.7.norm_ff.bias:                                             512
+* encoder.layers.7.norm_mha.weight:                                          512
+* encoder.layers.7.norm_mha.bias:                                            512
+* encoder.layers.7.norm_conv.weight:                                         512
+* encoder.layers.7.norm_conv.bias:                                           512
+* encoder.layers.7.norm_final.weight:                                        512
+* encoder.layers.7.norm_final.bias:                                          512
+* encoder.layers.8.self_attn.pos_bias_u:                                     512
+* encoder.layers.8.self_attn.pos_bias_v:                                     512
+* encoder.layers.8.self_attn.in_proj.weight:                              786432
+* encoder.layers.8.self_attn.in_proj.bias:                                  1536
+* encoder.layers.8.self_attn.out_proj.weight:                             262144
+* encoder.layers.8.self_attn.out_proj.bias:                                  512
+* encoder.layers.8.self_attn.linear_pos.weight:                           262144
+* encoder.layers.8.feed_forward.0.weight:                                1048576
+* encoder.layers.8.feed_forward.0.bias:                                     2048
+* encoder.layers.8.feed_forward.3.weight:                                1048576
+* encoder.layers.8.feed_forward.3.bias:                                      512
+* encoder.layers.8.feed_forward_macaron.0.weight:                        1048576
+* encoder.layers.8.feed_forward_macaron.0.bias:                             2048
+* encoder.layers.8.feed_forward_macaron.3.weight:                        1048576
+* encoder.layers.8.feed_forward_macaron.3.bias:                              512
+* encoder.layers.8.conv_module.pointwise_conv1.weight:                    524288
+* encoder.layers.8.conv_module.pointwise_conv1.bias:                        1024
+* encoder.layers.8.conv_module.depthwise_conv.weight:                      15872
+* encoder.layers.8.conv_module.depthwise_conv.bias:                          512
+* encoder.layers.8.conv_module.norm.weight:                                  512
+* encoder.layers.8.conv_module.norm.bias:                                    512
+* encoder.layers.8.conv_module.pointwise_conv2.weight:                    262144
+* encoder.layers.8.conv_module.pointwise_conv2.bias:                         512
+* encoder.layers.8.norm_ff_macaron.weight:                                   512
+* encoder.layers.8.norm_ff_macaron.bias:                                     512
+* encoder.layers.8.norm_ff.weight:                                           512
+* encoder.layers.8.norm_ff.bias:                                             512
+* encoder.layers.8.norm_mha.weight:                                          512
+* encoder.layers.8.norm_mha.bias:                                            512
+* encoder.layers.8.norm_conv.weight:                                         512
+* encoder.layers.8.norm_conv.bias:                                           512
+* encoder.layers.8.norm_final.weight:                                        512
+* encoder.layers.8.norm_final.bias:                                          512
+* encoder.layers.9.self_attn.pos_bias_u:                                     512
+* encoder.layers.9.self_attn.pos_bias_v:                                     512
+* encoder.layers.9.self_attn.in_proj.weight:                              786432
+* encoder.layers.9.self_attn.in_proj.bias:                                  1536
+* encoder.layers.9.self_attn.out_proj.weight:                             262144
+* encoder.layers.9.self_attn.out_proj.bias:                                  512
+* encoder.layers.9.self_attn.linear_pos.weight:                           262144
+* encoder.layers.9.feed_forward.0.weight:                                1048576
+* encoder.layers.9.feed_forward.0.bias:                                     2048
+* encoder.layers.9.feed_forward.3.weight:                                1048576
+* encoder.layers.9.feed_forward.3.bias:                                      512
+* encoder.layers.9.feed_forward_macaron.0.weight:                        1048576
+* encoder.layers.9.feed_forward_macaron.0.bias:                             2048
+* encoder.layers.9.feed_forward_macaron.3.weight:                        1048576
+* encoder.layers.9.feed_forward_macaron.3.bias:                              512
+* encoder.layers.9.conv_module.pointwise_conv1.weight:                    524288
+* encoder.layers.9.conv_module.pointwise_conv1.bias:                        1024
+* encoder.layers.9.conv_module.depthwise_conv.weight:                      15872
+* encoder.layers.9.conv_module.depthwise_conv.bias:                          512
+* encoder.layers.9.conv_module.norm.weight:                                  512
+* encoder.layers.9.conv_module.norm.bias:                                    512
+* encoder.layers.9.conv_module.pointwise_conv2.weight:                    262144
+* encoder.layers.9.conv_module.pointwise_conv2.bias:                         512
+* encoder.layers.9.norm_ff_macaron.weight:                                   512
+* encoder.layers.9.norm_ff_macaron.bias:                                     512
+* encoder.layers.9.norm_ff.weight:                                           512
+* encoder.layers.9.norm_ff.bias:                                             512
+* encoder.layers.9.norm_mha.weight:                                          512
+* encoder.layers.9.norm_mha.bias:                                            512
+* encoder.layers.9.norm_conv.weight:                                         512
+* encoder.layers.9.norm_conv.bias:                                           512
+* encoder.layers.9.norm_final.weight:                                        512
+* encoder.layers.9.norm_final.bias:                                          512
+* encoder.layers.10.self_attn.pos_bias_u:                                    512
+* encoder.layers.10.self_attn.pos_bias_v:                                    512
+* encoder.layers.10.self_attn.in_proj.weight:                             786432
+* encoder.layers.10.self_attn.in_proj.bias:                                 1536
+* encoder.layers.10.self_attn.out_proj.weight:                            262144
+* encoder.layers.10.self_attn.out_proj.bias:                                 512
+* encoder.layers.10.self_attn.linear_pos.weight:                          262144
+* encoder.layers.10.feed_forward.0.weight:                               1048576
+* encoder.layers.10.feed_forward.0.bias:                                    2048
+* encoder.layers.10.feed_forward.3.weight:                               1048576
+* encoder.layers.10.feed_forward.3.bias:                                     512
+* encoder.layers.10.feed_forward_macaron.0.weight:                       1048576
+* encoder.layers.10.feed_forward_macaron.0.bias:                            2048
+* encoder.layers.10.feed_forward_macaron.3.weight:                       1048576
+* encoder.layers.10.feed_forward_macaron.3.bias:                             512
+* encoder.layers.10.conv_module.pointwise_conv1.weight:                   524288
+* encoder.layers.10.conv_module.pointwise_conv1.bias:                       1024
+* encoder.layers.10.conv_module.depthwise_conv.weight:                     15872
+* encoder.layers.10.conv_module.depthwise_conv.bias:                         512
+* encoder.layers.10.conv_module.norm.weight:                                 512
+* encoder.layers.10.conv_module.norm.bias:                                   512
+* encoder.layers.10.conv_module.pointwise_conv2.weight:                   262144
+* encoder.layers.10.conv_module.pointwise_conv2.bias:                        512
+* encoder.layers.10.norm_ff_macaron.weight:                                  512
+* encoder.layers.10.norm_ff_macaron.bias:                                    512
+* encoder.layers.10.norm_ff.weight:                                          512
+* encoder.layers.10.norm_ff.bias:                                            512
+* encoder.layers.10.norm_mha.weight:                                         512
+* encoder.layers.10.norm_mha.bias:                                           512
+* encoder.layers.10.norm_conv.weight:                                        512
+* encoder.layers.10.norm_conv.bias:                                          512
+* encoder.layers.10.norm_final.weight:                                       512
+* encoder.layers.10.norm_final.bias:                                         512
+* encoder.layers.11.self_attn.pos_bias_u:                                    512
+* encoder.layers.11.self_attn.pos_bias_v:                                    512
+* encoder.layers.11.self_attn.in_proj.weight:                             786432
+* encoder.layers.11.self_attn.in_proj.bias:                                 1536
+* encoder.layers.11.self_attn.out_proj.weight:                            262144
+* encoder.layers.11.self_attn.out_proj.bias:                                 512
+* encoder.layers.11.self_attn.linear_pos.weight:                          262144
+* encoder.layers.11.feed_forward.0.weight:                               1048576
+* encoder.layers.11.feed_forward.0.bias:                                    2048
+* encoder.layers.11.feed_forward.3.weight:                               1048576
+* encoder.layers.11.feed_forward.3.bias:                                     512
+* encoder.layers.11.feed_forward_macaron.0.weight:                       1048576
+* encoder.layers.11.feed_forward_macaron.0.bias:                            2048
+* encoder.layers.11.feed_forward_macaron.3.weight:                       1048576
+* encoder.layers.11.feed_forward_macaron.3.bias:                             512
+* encoder.layers.11.conv_module.pointwise_conv1.weight:                   524288
+* encoder.layers.11.conv_module.pointwise_conv1.bias:                       1024
+* encoder.layers.11.conv_module.depthwise_conv.weight:                     15872
+* encoder.layers.11.conv_module.depthwise_conv.bias:                         512
+* encoder.layers.11.conv_module.norm.weight:                                 512
+* encoder.layers.11.conv_module.norm.bias:                                   512
+* encoder.layers.11.conv_module.pointwise_conv2.weight:                   262144
+* encoder.layers.11.conv_module.pointwise_conv2.bias:                        512
+* encoder.layers.11.norm_ff_macaron.weight:                                  512
+* encoder.layers.11.norm_ff_macaron.bias:                                    512
+* encoder.layers.11.norm_ff.weight:                                          512
+* encoder.layers.11.norm_ff.bias:                                            512
+* encoder.layers.11.norm_mha.weight:                                         512
+* encoder.layers.11.norm_mha.bias:                                           512
+* encoder.layers.11.norm_conv.weight:                                        512
+* encoder.layers.11.norm_conv.bias:                                          512
+* encoder.layers.11.norm_final.weight:                                       512
+* encoder.layers.11.norm_final.bias:                                         512
+* encoder_output_layer.1.weight:                                         2560000
+* encoder_output_layer.1.bias:                                              5000
+* decoder_embed.weight:                                                  2560000
+* decoder.layers.0.self_attn.in_proj_weight:                              786432
+* decoder.layers.0.self_attn.in_proj_bias:                                  1536
+* decoder.layers.0.self_attn.out_proj.weight:                             262144
+* decoder.layers.0.self_attn.out_proj.bias:                                  512
+* decoder.layers.0.src_attn.in_proj_weight:                               786432
+* decoder.layers.0.src_attn.in_proj_bias:                                   1536
+* decoder.layers.0.src_attn.out_proj.weight:                              262144
+* decoder.layers.0.src_attn.out_proj.bias:                                   512
+* decoder.layers.0.linear1.weight:                                       1048576
+* decoder.layers.0.linear1.bias:                                            2048
+* decoder.layers.0.linear2.weight:                                       1048576
+* decoder.layers.0.linear2.bias:                                             512
+* decoder.layers.0.norm1.weight:                                             512
+* decoder.layers.0.norm1.bias:                                               512
+* decoder.layers.0.norm2.weight:                                             512
+* decoder.layers.0.norm2.bias:                                               512
+* decoder.layers.0.norm3.weight:                                             512
+* decoder.layers.0.norm3.bias:                                               512
+* decoder.layers.1.self_attn.in_proj_weight:                              786432
+* decoder.layers.1.self_attn.in_proj_bias:                                  1536
+* decoder.layers.1.self_attn.out_proj.weight:                             262144
+* decoder.layers.1.self_attn.out_proj.bias:                                  512
+* decoder.layers.1.src_attn.in_proj_weight:                               786432
+* decoder.layers.1.src_attn.in_proj_bias:                                   1536
+* decoder.layers.1.src_attn.out_proj.weight:                              262144
+* decoder.layers.1.src_attn.out_proj.bias:                                   512
+* decoder.layers.1.linear1.weight:                                       1048576
+* decoder.layers.1.linear1.bias:                                            2048
+* decoder.layers.1.linear2.weight:                                       1048576
+* decoder.layers.1.linear2.bias:                                             512
+* decoder.layers.1.norm1.weight:                                             512
+* decoder.layers.1.norm1.bias:                                               512
+* decoder.layers.1.norm2.weight:                                             512
+* decoder.layers.1.norm2.bias:                                               512
+* decoder.layers.1.norm3.weight:                                             512
+* decoder.layers.1.norm3.bias:                                               512
+* decoder.layers.2.self_attn.in_proj_weight:                              786432
+* decoder.layers.2.self_attn.in_proj_bias:                                  1536
+* decoder.layers.2.self_attn.out_proj.weight:                             262144
+* decoder.layers.2.self_attn.out_proj.bias:                                  512
+* decoder.layers.2.src_attn.in_proj_weight:                               786432
+* decoder.layers.2.src_attn.in_proj_bias:                                   1536
+* decoder.layers.2.src_attn.out_proj.weight:                              262144
+* decoder.layers.2.src_attn.out_proj.bias:                                   512
+* decoder.layers.2.linear1.weight:                                       1048576
+* decoder.layers.2.linear1.bias:                                            2048
+* decoder.layers.2.linear2.weight:                                       1048576
+* decoder.layers.2.linear2.bias:                                             512
+* decoder.layers.2.norm1.weight:                                             512
+* decoder.layers.2.norm1.bias:                                               512
+* decoder.layers.2.norm2.weight:                                             512
+* decoder.layers.2.norm2.bias:                                               512
+* decoder.layers.2.norm3.weight:                                             512
+* decoder.layers.2.norm3.bias:                                               512
+* decoder.layers.3.self_attn.in_proj_weight:                              786432
+* decoder.layers.3.self_attn.in_proj_bias:                                  1536
+* decoder.layers.3.self_attn.out_proj.weight:                             262144
+* decoder.layers.3.self_attn.out_proj.bias:                                  512
+* decoder.layers.3.src_attn.in_proj_weight:                               786432
+* decoder.layers.3.src_attn.in_proj_bias:                                   1536
+* decoder.layers.3.src_attn.out_proj.weight:                              262144
+* decoder.layers.3.src_attn.out_proj.bias:                                   512
+* decoder.layers.3.linear1.weight:                                       1048576
+* decoder.layers.3.linear1.bias:                                            2048
+* decoder.layers.3.linear2.weight:                                       1048576
+* decoder.layers.3.linear2.bias:                                             512
+* decoder.layers.3.norm1.weight:                                             512
+* decoder.layers.3.norm1.bias:                                               512
+* decoder.layers.3.norm2.weight:                                             512
+* decoder.layers.3.norm2.bias:                                               512
+* decoder.layers.3.norm3.weight:                                             512
+* decoder.layers.3.norm3.bias:                                               512
+* decoder.layers.4.self_attn.in_proj_weight:                              786432
+* decoder.layers.4.self_attn.in_proj_bias:                                  1536
+* decoder.layers.4.self_attn.out_proj.weight:                             262144
+* decoder.layers.4.self_attn.out_proj.bias:                                  512
+* decoder.layers.4.src_attn.in_proj_weight:                               786432
+* decoder.layers.4.src_attn.in_proj_bias:                                   1536
+* decoder.layers.4.src_attn.out_proj.weight:                              262144
+* decoder.layers.4.src_attn.out_proj.bias:                                   512
+* decoder.layers.4.linear1.weight:                                       1048576
+* decoder.layers.4.linear1.bias:                                            2048
+* decoder.layers.4.linear2.weight:                                       1048576
+* decoder.layers.4.linear2.bias:                                             512
+* decoder.layers.4.norm1.weight:                                             512
+* decoder.layers.4.norm1.bias:                                               512
+* decoder.layers.4.norm2.weight:                                             512
+* decoder.layers.4.norm2.bias:                                               512
+* decoder.layers.4.norm3.weight:                                             512
+* decoder.layers.4.norm3.bias:                                               512
+* decoder.layers.5.self_attn.in_proj_weight:                              786432
+* decoder.layers.5.self_attn.in_proj_bias:                                  1536
+* decoder.layers.5.self_attn.out_proj.weight:                             262144
+* decoder.layers.5.self_attn.out_proj.bias:                                  512
+* decoder.layers.5.src_attn.in_proj_weight:                               786432
+* decoder.layers.5.src_attn.in_proj_bias:                                   1536
+* decoder.layers.5.src_attn.out_proj.weight:                              262144
+* decoder.layers.5.src_attn.out_proj.bias:                                   512
+* decoder.layers.5.linear1.weight:                                       1048576
+* decoder.layers.5.linear1.bias:                                            2048
+* decoder.layers.5.linear2.weight:                                       1048576
+* decoder.layers.5.linear2.bias:                                             512
+* decoder.layers.5.norm1.weight:                                             512
+* decoder.layers.5.norm1.bias:                                               512
+* decoder.layers.5.norm2.weight:                                             512
+* decoder.layers.5.norm2.bias:                                               512
+* decoder.layers.5.norm3.weight:                                             512
+* decoder.layers.5.norm3.bias:                                               512
+* decoder.norm.weight:                                                       512
+* decoder.norm.bias:                                                         512
+* decoder_output_layer.weight:                                           2560000
+* decoder_output_layer.bias:                                                5000
+* after_norm.weight:                                                         512
+* after_norm.bias:                                                           512
+================================================================================
+Total: 116146960
+================================================================================
+epoch 1, learning rate 0
+Added key: store_based_barrier_key:1 to store for rank: 1
+About to get train cuts
+About to get train cuts
+About to get Musan cuts
+About to create train dataset
+Using BucketingSampler.
+About to create train dataloader
+About to get dev cuts
+About to get dev cuts
+About to create dev dataset
+About to create dev dataloader
+Added key: store_based_barrier_key:1 to store for rank: 2
+About to get train cuts
+About to get train cuts
+About to get Musan cuts
+About to create train dataset
+Using BucketingSampler.
+About to create train dataloader
+About to get dev cuts
+About to get dev cuts
+About to create dev dataset
+About to create dev dataloader
+Added key: store_based_barrier_key:1 to store for rank: 3
+About to get train cuts
+About to get train cuts
+About to get Musan cuts
+About to create train dataset
+Using BucketingSampler.
+About to create train dataloader
+About to get dev cuts
+About to get dev cuts
+About to create dev dataset
+About to create dev dataloader
+1epoch:train:0-0batch: loss=1.181e+03, loss_att=370.8, loss_ctc=3.072e+03
+Reducer buckets have been rebuilt in this iteration.
+1epoch:train:0-100batch: loss=531.7, loss_att=231.7, loss_ctc=1.232e+03
+1epoch:train:100-200batch: loss=258.8, loss_att=244.4, loss_ctc=292.4
+1epoch:train:200-300batch: loss=241.8, loss_att=227.3, loss_ctc=275.6
+1epoch:train:300-400batch: loss=175.1, loss_att=157.4, loss_ctc=216.5
+1epoch:train:400-500batch: loss=161.6, loss_att=135.1, loss_ctc=223.2
+1epoch:train:500-600batch: loss=139.2, loss_att=104.0, loss_ctc=221.4
+1epoch:train:600-700batch: loss=115.9, loss_att=75.3, loss_ctc=210.5
+1epoch:train:700-800batch: loss=103.6, loss_att=56.16, loss_ctc=214.3
+1epoch:train:800-900batch: loss=93.0, loss_att=42.12, loss_ctc=211.7
+1epoch:train:900-1000batch: loss=90.46, loss_att=33.73, loss_ctc=222.8
+Reducer buckets have been rebuilt in this iteration.
+Reducer buckets have been rebuilt in this iteration.
+Reducer buckets have been rebuilt in this iteration.
+Validation average objf: -59.361104 over 5505.0 utts
+1epoch:train:1000-1100batch: loss=88.3, loss_att=26.47, loss_ctc=232.6
+1epoch:train:1100-1200batch: loss=72.06, loss_att=16.77, loss_ctc=201.1
+1epoch:train:1200-1300batch: loss=71.8, loss_att=12.75, loss_ctc=209.6
+1epoch:train:1300-1400batch: loss=68.63, loss_att=9.272, loss_ctc=207.1
+1epoch:train:1400-1500batch: loss=62.02, loss_att=6.287, loss_ctc=192.1
+1epoch:train:1500-1600batch: loss=63.33, loss_att=4.702, loss_ctc=200.1
+1epoch:train:1600-1700batch: loss=61.08, loss_att=3.355, loss_ctc=195.8
+1epoch:train:1700-1800batch: loss=64.77, loss_att=2.658, loss_ctc=209.7
+1epoch:train:1800-1900batch: loss=54.05, loss_att=1.758, loss_ctc=176.1
+1epoch:train:1900-2000batch: loss=61.84, loss_att=1.564, loss_ctc=202.5
+Validation average objf: -36.155336 over 5505.0 utts
+1epoch:train:2000-2100batch: loss=51.89, loss_att=1.016, loss_ctc=170.6
+1epoch:train:2100-2200batch: loss=49.59, loss_att=0.7989, loss_ctc=163.4
+1epoch:train:2200-2300batch: loss=52.22, loss_att=0.7337, loss_ctc=172.3
+1epoch:train:2300-2400batch: loss=50.98, loss_att=0.6346, loss_ctc=168.5
+1epoch:train:2400-2500batch: loss=52.12, loss_att=0.599, loss_ctc=172.3
+1epoch:train:2500-2600batch: loss=53.29, loss_att=0.5682, loss_ctc=176.3
+1epoch:train:2600-2700batch: loss=46.99, loss_att=0.476, loss_ctc=155.5
+1epoch:train:2700-2800batch: loss=48.91, loss_att=0.4729, loss_ctc=161.9
+1epoch:train:2800-2900batch: loss=51.71, loss_att=0.4843, loss_ctc=171.2
+1epoch:train:2900-3000batch: loss=43.94, loss_att=0.4183, loss_ctc=145.5
+Validation average objf: -24.609724 over 5505.0 utts
+1epoch:train:3000-3100batch: loss=44.86, loss_att=0.4247, loss_ctc=148.5
+1epoch:train:3100-3200batch: loss=44.57, loss_att=0.409, loss_ctc=147.6
+1epoch:train:3200-3300batch: loss=41.85, loss_att=0.3826, loss_ctc=138.6
+1epoch:train:3300-3400batch: loss=39.76, loss_att=0.3559, loss_ctc=131.7
+1epoch:train:3400-3500batch: loss=38.63, loss_att=0.3377, loss_ctc=128.0
+1epoch:train:3500-3600batch: loss=41.92, loss_att=0.3799, loss_ctc=138.8
+1epoch:train:3600-3700batch: loss=38.85, loss_att=0.3522, loss_ctc=128.7
+1epoch:train:3700-3800batch: loss=36.23, loss_att=0.3207, loss_ctc=120.0
+1epoch:train:3800-3900batch: loss=34.42, loss_att=0.3126, loss_ctc=114.0
+1epoch:train:3900-4000batch: loss=36.55, loss_att=0.3333, loss_ctc=121.1
+Validation average objf: -17.018595 over 5505.0 utts
+1epoch:train:4000-4100batch: loss=33.55, loss_att=0.3123, loss_ctc=111.1
+1epoch:train:4100-4200batch: loss=36.74, loss_att=0.3406, loss_ctc=121.7
+1epoch:train:4200-4300batch: loss=32.36, loss_att=0.3037, loss_ctc=107.2
+1epoch:train:4300-4400batch: loss=32.24, loss_att=0.2987, loss_ctc=106.8
+1epoch:train:4400-4500batch: loss=34.28, loss_att=0.3169, loss_ctc=113.5
+1epoch:train:4500-4600batch: loss=31.62, loss_att=0.3038, loss_ctc=104.7
+1epoch:train:4600-4700batch: loss=33.61, loss_att=0.3235, loss_ctc=111.3
+1epoch:train:4700-4800batch: loss=31.63, loss_att=0.3074, loss_ctc=104.7
+1epoch:train:4800-4900batch: loss=30.44, loss_att=0.2922, loss_ctc=100.8
+1epoch:train:4900-5000batch: loss=31.53, loss_att=0.3051, loss_ctc=104.4
+Validation average objf: -13.515416 over 5505.0 utts
+1epoch:train:5000-5100batch: loss=32.25, loss_att=0.3196, loss_ctc=106.8
+1epoch:train:5100-5200batch: loss=32.81, loss_att=0.322, loss_ctc=108.6
+1epoch:train:5200-5300batch: loss=30.75, loss_att=0.2969, loss_ctc=101.8
+1epoch:train:5300-5400batch: loss=28.71, loss_att=0.2794, loss_ctc=95.03
+1epoch:train:5400-5500batch: loss=30.05, loss_att=0.2965, loss_ctc=99.48
+1epoch:train:5500-5600batch: loss=29.23, loss_att=0.2948, loss_ctc=96.74
+1epoch:train:5600-5700batch: loss=29.97, loss_att=0.3173, loss_ctc=99.15
+1epoch:train:5700-5800batch: loss=28.41, loss_att=0.2897, loss_ctc=94.03
+1epoch:train:5800-5900batch: loss=29.89, loss_att=0.3023, loss_ctc=98.93
+1epoch:train:5900-6000batch: loss=29.53, loss_att=0.2935, loss_ctc=97.76
+Validation average objf: -12.222683 over 5505.0 utts
+1epoch:train:6000-6100batch: loss=30.52, loss_att=0.3078, loss_ctc=101.0
+1epoch:train:6100-6200batch: loss=29.05, loss_att=0.293, loss_ctc=96.14
+1epoch:train:6200-6300batch: loss=29.18, loss_att=0.295, loss_ctc=96.58
+1epoch:train:6300-6400batch: loss=30.09, loss_att=0.3062, loss_ctc=99.57
+1epoch:train:6400-6500batch: loss=30.26, loss_att=0.317, loss_ctc=100.1
+1epoch:train:6500-6600batch: loss=30.6, loss_att=0.3163, loss_ctc=101.3
+1epoch:train:6600-6700batch: loss=28.94, loss_att=0.3056, loss_ctc=95.75
+1epoch:train:6700-6800batch: loss=31.01, loss_att=0.3161, loss_ctc=102.6
+1epoch:train:6800-6900batch: loss=28.91, loss_att=0.3195, loss_ctc=95.61
+1epoch:train:6900-7000batch: loss=29.96, loss_att=0.3188, loss_ctc=99.13
+Validation average objf: -11.763957 over 5505.0 utts
+1epoch:train:7000-7100batch: loss=30.46, loss_att=0.3159, loss_ctc=100.8
+1epoch:train:7100-7200batch: loss=28.82, loss_att=0.3125, loss_ctc=95.34
+1epoch:train:7200-7300batch: loss=29.1, loss_att=0.3307, loss_ctc=96.23
+1epoch:train:7300-7400batch: loss=28.34, loss_att=0.3195, loss_ctc=93.72
+1epoch:train:7400-7500batch: loss=28.69, loss_att=0.3248, loss_ctc=94.87
+1epoch:train:7500-7600batch: loss=28.55, loss_att=0.3223, loss_ctc=94.4
+1epoch:train:7600-7700batch: loss=29.27, loss_att=0.3153, loss_ctc=96.84
+1epoch:train:7700-7800batch: loss=28.3, loss_att=0.3157, loss_ctc=93.6
+1epoch:train:7800-7900batch: loss=29.42, loss_att=0.3307, loss_ctc=97.29
+1epoch:train:7900-8000batch: loss=28.62, loss_att=0.327, loss_ctc=94.64
+Validation average objf: -11.200155 over 5505.0 utts
+1epoch:train:8000-8100batch: loss=27.31, loss_att=0.3013, loss_ctc=90.33
+1epoch:train:8100-8200batch: loss=27.11, loss_att=0.3213, loss_ctc=89.61
+1epoch:train:8200-8300batch: loss=27.81, loss_att=0.3246, loss_ctc=91.95
+1epoch:train:8300-8400batch: loss=28.57, loss_att=0.3157, loss_ctc=94.51
+1epoch:train:8400-8500batch: loss=28.7, loss_att=0.3236, loss_ctc=94.92
+1epoch:train:8500-8600batch: loss=27.56, loss_att=0.314, loss_ctc=91.13
+1epoch:train:8600-8700batch: loss=28.98, loss_att=0.3279, loss_ctc=95.84
+1epoch:train:8700-8800batch: loss=28.73, loss_att=0.3296, loss_ctc=94.99
+1epoch:train:8800-8900batch: loss=28.35, loss_att=0.3316, loss_ctc=93.73
+1epoch:train:8900-9000batch: loss=29.4, loss_att=0.3258, loss_ctc=97.25
+Validation average objf: -10.833612 over 5505.0 utts
+1epoch:train:9000-9100batch: loss=28.47, loss_att=0.3375, loss_ctc=94.11
+1epoch:train:9100-9200batch: loss=28.61, loss_att=0.3404, loss_ctc=94.57
+1epoch:train:9200-9300batch: loss=29.13, loss_att=0.3462, loss_ctc=96.3
+1epoch:train:9300-9400batch: loss=28.58, loss_att=0.3398, loss_ctc=94.48
+1epoch:train:9400-9500batch: loss=29.89, loss_att=0.3374, loss_ctc=98.84
+1epoch:train:9500-9600batch: loss=28.4, loss_att=0.3455, loss_ctc=93.86
+1epoch:train:9600-9700batch: loss=29.03, loss_att=0.3432, loss_ctc=95.98
+1epoch:train:9700-9800batch: loss=28.45, loss_att=0.3578, loss_ctc=94.0
+1epoch:train:9800-9900batch: loss=28.01, loss_att=0.3455, loss_ctc=92.57
+1epoch:train:9900-10000batch: loss=27.52, loss_att=0.3451, loss_ctc=90.93
+Validation average objf: -10.866789 over 5505.0 utts
+1epoch:train:10000-10100batch: loss=28.89, loss_att=0.3372, loss_ctc=95.51
+1epoch:train:10100-10200batch: loss=27.75, loss_att=0.3514, loss_ctc=91.67
+1epoch:train:10200-10300batch: loss=27.66, loss_att=0.3754, loss_ctc=91.32
+1epoch:train:10300-10400batch: loss=27.65, loss_att=0.3585, loss_ctc=91.34
+1epoch:train:10400-10500batch: loss=28.01, loss_att=0.3585, loss_ctc=92.52
+1epoch:train:10500-10600batch: loss=27.73, loss_att=0.361, loss_ctc=91.58
+1epoch:train:10600-10700batch: loss=28.19, loss_att=0.3713, loss_ctc=93.1
+1epoch:train:10700-10800batch: loss=29.1, loss_att=0.3631, loss_ctc=96.15
+1epoch:train:10800-10900batch: loss=29.35, loss_att=0.3735, loss_ctc=96.97
+1epoch:train:10900-11000batch: loss=28.93, loss_att=0.3817, loss_ctc=95.55
+Validation average objf: -10.589833 over 5505.0 utts
+1epoch:train:11000-11100batch: loss=29.06, loss_att=0.3755, loss_ctc=96.0
+1epoch:train:11100-11200batch: loss=28.17, loss_att=0.3891, loss_ctc=93.0
+1epoch:train:11200-11300batch: loss=27.76, loss_att=0.3896, loss_ctc=91.62
+1epoch:train:11300-11400batch: loss=27.64, loss_att=0.3752, loss_ctc=91.25
+1epoch:train:11400-11500batch: loss=28.48, loss_att=0.3769, loss_ctc=94.04
+1epoch:train:11500-11600batch: loss=27.27, loss_att=0.4034, loss_ctc=89.98
+1epoch:train:11600-11700batch: loss=27.21, loss_att=0.396, loss_ctc=89.78
+1epoch:train:11700-11800batch: loss=26.91, loss_att=0.3846, loss_ctc=88.81
+1epoch:train:11800-11900batch: loss=27.11, loss_att=0.387, loss_ctc=89.47
+1epoch:train:11900-12000batch: loss=27.49, loss_att=0.3956, loss_ctc=90.72
+Validation average objf: -9.816401 over 5505.0 utts
+1epoch:train:12000-12100batch: loss=27.21, loss_att=0.4209, loss_ctc=89.71
+1epoch:train:12100-12200batch: loss=26.87, loss_att=0.4091, loss_ctc=88.61
+1epoch:train:12200-12300batch: loss=27.01, loss_att=0.4132, loss_ctc=89.06
+1epoch:train:12300-12400batch: loss=26.84, loss_att=0.4294, loss_ctc=88.47
+1epoch:train:12400-12500batch: loss=27.16, loss_att=0.4335, loss_ctc=89.54
+1epoch:train:12500-12600batch: loss=27.23, loss_att=0.4249, loss_ctc=89.79
+1epoch:train:12600-12700batch: loss=27.19, loss_att=0.4418, loss_ctc=89.59
+1epoch:train:12700-12800batch: loss=27.55, loss_att=0.4268, loss_ctc=90.82
+1epoch:train:12800-12900batch: loss=27.09, loss_att=0.4419, loss_ctc=89.28
+1epoch:train:12900-13000batch: loss=27.3, loss_att=0.4305, loss_ctc=90.0
+Validation average objf: -9.953739 over 5505.0 utts
+1epoch:train:13000-13100batch: loss=28.04, loss_att=0.4441, loss_ctc=92.44
+1epoch:train:13100-13200batch: loss=27.85, loss_att=0.4795, loss_ctc=91.71
+1epoch:train:13200-13300batch: loss=26.75, loss_att=0.4702, loss_ctc=88.07
+1epoch:train:13300-13400batch: loss=26.14, loss_att=0.4565, loss_ctc=86.06
+1epoch:train:13400-13500batch: loss=27.2, loss_att=0.4668, loss_ctc=89.57
+Save checkpoint to exp-bpe-lrfactor10.0-conformer-512-8-noam/best_model.pt: epoch=1, learning_rate=0, objf=-3.383457466766127, valid_objf=-9.95373949818347
+write training info to exp-bpe-lrfactor10.0-conformer-512-8-noam/best-epoch-info
+Save checkpoint to exp-bpe-lrfactor10.0-conformer-512-8-noam/epoch-1.pt: epoch=1, learning_rate=0, objf=-3.383457466766127, valid_objf=-9.95373949818347
+write training info to exp-bpe-lrfactor10.0-conformer-512-8-noam/epoch-1-info
+epoch 2, learning rate 0.0007485940618639769
+2epoch:train:0-0batch: loss=14.92, loss_att=0.1418, loss_ctc=49.4
+2epoch:train:0-100batch: loss=17.72, loss_att=0.2563, loss_ctc=58.47
+2epoch:train:100-200batch: loss=17.14, loss_att=0.2373, loss_ctc=56.59
+2epoch:train:200-300batch: loss=20.25, loss_att=0.3186, loss_ctc=66.74
+2epoch:train:300-400batch: loss=19.06, loss_att=0.302, loss_ctc=62.83
+2epoch:train:400-500batch: loss=18.68, loss_att=0.2943, loss_ctc=61.57
+2epoch:train:500-600batch: loss=18.32, loss_att=0.2859, loss_ctc=60.39
+2epoch:train:600-700batch: loss=18.75, loss_att=0.2926, loss_ctc=61.8
+2epoch:train:700-800batch: loss=18.64, loss_att=0.2989, loss_ctc=61.45
+2epoch:train:800-900batch: loss=17.52, loss_att=0.2797, loss_ctc=57.74
+2epoch:train:900-1000batch: loss=19.39, loss_att=0.3065, loss_ctc=63.9
+Validation average objf: -8.619123 over 5505.0 utts
+2epoch:train:1000-1100batch: loss=19.9, loss_att=0.332, loss_ctc=65.54
+2epoch:train:1100-1200batch: loss=17.74, loss_att=0.2847, loss_ctc=58.46
+2epoch:train:1200-1300batch: loss=17.29, loss_att=0.2892, loss_ctc=56.96
+2epoch:train:1300-1400batch: loss=20.88, loss_att=0.3721, loss_ctc=68.72
+2epoch:train:1400-1500batch: loss=17.2, loss_att=0.2851, loss_ctc=56.65
+2epoch:train:1500-1600batch: loss=18.22, loss_att=0.3156, loss_ctc=60.01
+2epoch:train:1600-1700batch: loss=17.3, loss_att=0.2843, loss_ctc=57.0
+2epoch:train:1700-1800batch: loss=18.28, loss_att=0.3175, loss_ctc=60.19
+2epoch:train:1800-1900batch: loss=15.89, loss_att=0.2685, loss_ctc=52.33
+2epoch:train:1900-2000batch: loss=16.82, loss_att=0.2811, loss_ctc=55.42
+Validation average objf: -8.224292 over 5505.0 utts
+2epoch:train:2000-2100batch: loss=19.88, loss_att=0.34, loss_ctc=65.47
+2epoch:train:2100-2200batch: loss=16.68, loss_att=0.2881, loss_ctc=54.93
+2epoch:train:2200-2300batch: loss=18.2, loss_att=0.3333, loss_ctc=59.88
+2epoch:train:2300-2400batch: loss=19.33, loss_att=0.3441, loss_ctc=63.62
+2epoch:train:2400-2500batch: loss=19.27, loss_att=0.3686, loss_ctc=63.38
+2epoch:train:2500-2600batch: loss=17.08, loss_att=0.2868, loss_ctc=56.25
+2epoch:train:2600-2700batch: loss=19.12, loss_att=0.3637, loss_ctc=62.89
+2epoch:train:2700-2800batch: loss=18.48, loss_att=0.3562, loss_ctc=60.78
+2epoch:train:2800-2900batch: loss=18.46, loss_att=0.3499, loss_ctc=60.72
+2epoch:train:2900-3000batch: loss=20.06, loss_att=0.378, loss_ctc=65.99
+Validation average objf: -7.977686 over 5505.0 utts
+2epoch:train:3000-3100batch: loss=18.16, loss_att=0.3455, loss_ctc=59.73
+2epoch:train:3100-3200batch: loss=18.94, loss_att=0.3681, loss_ctc=62.26
+2epoch:train:3200-3300batch: loss=19.93, loss_att=0.4018, loss_ctc=65.49
+2epoch:train:3300-3400batch: loss=19.0, loss_att=0.3644, loss_ctc=62.48
+2epoch:train:3400-3500batch: loss=19.08, loss_att=0.3752, loss_ctc=62.74
+2epoch:train:3500-3600batch: loss=16.73, loss_att=0.3199, loss_ctc=55.0
+2epoch:train:3600-3700batch: loss=18.47, loss_att=0.3597, loss_ctc=60.74
+2epoch:train:3700-3800batch: loss=17.06, loss_att=0.3284, loss_ctc=56.1
+2epoch:train:3800-3900batch: loss=18.72, loss_att=0.3762, loss_ctc=61.53
+2epoch:train:3900-4000batch: loss=18.57, loss_att=0.3747, loss_ctc=61.04
+Validation average objf: -7.268529 over 5505.0 utts
+2epoch:train:4000-4100batch: loss=19.2, loss_att=0.3961, loss_ctc=63.09
+2epoch:train:4100-4200batch: loss=19.47, loss_att=0.393, loss_ctc=63.98
+2epoch:train:4200-4300batch: loss=19.05, loss_att=0.3876, loss_ctc=62.61
+2epoch:train:4300-4400batch: loss=17.86, loss_att=0.3558, loss_ctc=58.7
+2epoch:train:4400-4500batch: loss=18.2, loss_att=0.355, loss_ctc=59.84
+2epoch:train:4500-4600batch: loss=18.94, loss_att=0.3881, loss_ctc=62.24
+2epoch:train:4600-4700batch: loss=19.11, loss_att=0.4012, loss_ctc=62.78
+2epoch:train:4700-4800batch: loss=18.79, loss_att=0.4114, loss_ctc=61.67
+2epoch:train:4800-4900batch: loss=18.24, loss_att=0.3688, loss_ctc=59.95
+2epoch:train:4900-5000batch: loss=18.0, loss_att=0.3803, loss_ctc=59.1
+Validation average objf: -7.202147 over 5505.0 utts
+2epoch:train:5000-5100batch: loss=18.11, loss_att=0.395, loss_ctc=59.46
+2epoch:train:5100-5200batch: loss=20.41, loss_att=0.4624, loss_ctc=66.96
+2epoch:train:5200-5300batch: loss=17.55, loss_att=0.3607, loss_ctc=57.67
+2epoch:train:5300-5400batch: loss=19.13, loss_att=0.4058, loss_ctc=62.83
+2epoch:train:5400-5500batch: loss=18.25, loss_att=0.4092, loss_ctc=59.87
+2epoch:train:5500-5600batch: loss=24.8, loss_att=0.4313, loss_ctc=81.65
+2epoch:train:5600-5700batch: loss=22.5, loss_att=0.3424, loss_ctc=74.21
+2epoch:train:5700-5800batch: loss=21.24, loss_att=0.4958, loss_ctc=69.64
+2epoch:train:5800-5900batch: loss=20.28, loss_att=0.4845, loss_ctc=66.45
+2epoch:train:5900-6000batch: loss=19.56, loss_att=0.4353, loss_ctc=64.18
+Validation average objf: -7.341979 over 5505.0 utts
+2epoch:train:6000-6100batch: loss=21.46, loss_att=0.4254, loss_ctc=70.54
+2epoch:train:6100-6200batch: loss=19.77, loss_att=0.4806, loss_ctc=64.78
+2epoch:train:6200-6300batch: loss=20.28, loss_att=0.4217, loss_ctc=66.6
+2epoch:train:6300-6400batch: loss=19.14, loss_att=0.4609, loss_ctc=62.71
+2epoch:train:6400-6500batch: loss=19.87, loss_att=0.4548, loss_ctc=65.19
+2epoch:train:6500-6600batch: loss=19.87, loss_att=0.4347, loss_ctc=65.22
+2epoch:train:6600-6700batch: loss=19.52, loss_att=0.4509, loss_ctc=64.0
+2epoch:train:6700-6800batch: loss=19.28, loss_att=0.4603, loss_ctc=63.19
+2epoch:train:6800-6900batch: loss=19.65, loss_att=0.4418, loss_ctc=64.48
+2epoch:train:6900-7000batch: loss=19.53, loss_att=0.4413, loss_ctc=64.06
+Validation average objf: -6.914209 over 5505.0 utts
+2epoch:train:7000-7100batch: loss=18.69, loss_att=0.4158, loss_ctc=61.32
+2epoch:train:7100-7200batch: loss=19.07, loss_att=0.4514, loss_ctc=62.53
+2epoch:train:7200-7300batch: loss=18.95, loss_att=0.4557, loss_ctc=62.12
+2epoch:train:7300-7400batch: loss=19.61, loss_att=0.4546, loss_ctc=64.3
+2epoch:train:7400-7500batch: loss=19.1, loss_att=0.4335, loss_ctc=62.66
+2epoch:train:7500-7600batch: loss=20.29, loss_att=0.4427, loss_ctc=66.59
+2epoch:train:7600-7700batch: loss=20.4, loss_att=0.4626, loss_ctc=66.93
+2epoch:train:7700-7800batch: loss=19.02, loss_att=0.4875, loss_ctc=62.27
+2epoch:train:7800-7900batch: loss=19.1, loss_att=0.4388, loss_ctc=62.65
+2epoch:train:7900-8000batch: loss=19.12, loss_att=0.4544, loss_ctc=62.66
